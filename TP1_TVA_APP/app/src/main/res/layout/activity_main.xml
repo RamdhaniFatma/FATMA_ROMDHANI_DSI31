@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:padding="20dp"
+        android:layout_marginLeft="50dp"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:background="#00532020"
+            android:text="@string/prix_initial"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+          />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/table"
+
+        android:layout_width="360dp"
+        android:layout_height="148dp"
+        android:layout_below="@+id/first"
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center">
+
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/tva"
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RadioButton
+                    android:id="@+id/radio_pirates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_19"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/radio_ninjas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_12"
+
+
+                    />
+            </RadioGroup>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="114dp"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:text="@string/remise"
+               />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:text="10%"
+               />
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="217dp"
+            android:layout_height="206dp"
+
+            >
+
+            <Button
+                android:id="@+id/Button01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculer"
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/Button02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RAZ"
+                 />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="367dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/table"
+
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="0dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Prix Final:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
+
+
+</RelativeLayout>

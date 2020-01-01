@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TVAapplication</string>
+    <string name="_10" />
+    <string name="remise">remise</string>
+    <string name="_12">12%</string>
+    <string name="_19">19%</string>
+    <string name="tva">TVA</string>
+    <string name="prix_initial">Prix Intial</string>
+</resources>

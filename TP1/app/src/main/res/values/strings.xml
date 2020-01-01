@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TestTpAndroid1</string>
+    <string name="zone1"></string>
+    <string name="zone2"></string>
+    <string name="btn">valider</string>
+    <string name="msg"></string>
+    <string name="rouge"></string>
+    <string name="bleu"></string>
+</resources>
